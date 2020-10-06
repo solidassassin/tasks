@@ -1,7 +1,6 @@
 import time
 
 from datetime import date
-from typing import Union
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -64,7 +63,7 @@ def click(by: str, path: str) -> WebElement:
     return element
 
 
-def send_keys(by: str, path: str, *keys: Union[str, Keys]) -> WebElement:
+def send_keys(by: str, path: str, *keys: str) -> WebElement:
     """
     Sends keys to the element provided by path and return it.
     """
